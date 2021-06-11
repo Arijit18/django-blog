@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Arijit's Blog
+{% endblock title %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}">
+{% endblock css_files %}
+
+{% block content %}
+<header id="main-navigation">
+    <h1>
+        <a href="">Arijit's Blog</a>
+        <nav>
+            <a href="">All Posts</a>
+        </nav>
+    </h1>
+</header>
+<section id="welcome">
+    <header>
+        <img src="" alt="Arijit - Author" />
+        <h2>Arijit's Blog</h2>
+    </header>
+    <p>My bio</p>
+</section>
+<section id="latest-posts">
+    <h2> My latests</h2>
+    <ul>
+        <li>
+            <article class="post">
+                <!-- <a href=""> -->
+                    <img src="" alt="Moutain Hiking"/>
+                    <div class="post__content">
+                        <h3>Mountain Hiking</h3>
+                        <p>
+                            Ullamco sit et commodo est veniam culpa ipsum excepteur qui. Sint commodo labore do eu eu
+                            esse excepteur irure. Ea nisi Lorem aute exercitation magna nisi magna ullamco exercitation
+                            culpa voluptate. In Lorem eu ullamco eiusmod ea ipsum deserunt commodo veniam eu eiusmod
+                            ullamco. Ea incididunt sint irure dolore do voluptate excepteur. Culpa laborum nulla nostrud
+                            commodo laborum pariatur dolor incididunt sint eu. Exercitation reprehenderit nisi sit qui
+                            sit cupidatat enim.
+                        </p>
+                    </div>
+                <!-- </a> -->
+            </article>
+        </li>
+    </ul>
+</section>
+<section id="about">
+    <h2>About Me</h2>
+    <p>Non commodo esse qui laboris nisi eu sint nisi commodo est occaecat reprehenderit.</p>
+    <p>Reprehenderit do quis consequat aute consequat Lorem pariatur nisi irure ullamco. Consectetur eiusmod adipisicing
+        magna commodo in cillum cupidatat laboris ullamco pariatur culpa id laborum. Magna eiusmod ipsum nulla occaecat
+        culpa ea excepteur pariatur. Elit dolore occaecat quis enim non esse Lorem. Nostrud adipisicing duis magna do ut
+        labore incididunt proident incididunt. Deserunt non elit enim nulla aute ut non do anim aliqua consectetur nisi
+        adipisicing nulla. Quis ex magna dolor exercitation.</p>
+</section>
+{% endblock content %}
