@@ -21,12 +21,12 @@
 <body>
     <header class="site-header mb-2">
         <nav class="navbar navbar-expand bg-steel navbar-dark flex-column flex-md-row bd-navbar">
-            <a class="navbar-brand mr-0 mr-md-2" href="#">Arijit's Blog</a>
+            <a class="navbar-brand mr-0 mr-md-2" href="{% url 'starting-page' %}">Arijit's Blog</a>
             <div class="collapse navbar-collapse justify-content-end" id="nav-content">
                 <div class="navbar-nav-scroll">
                     <ul class="navbar-nav bd-navbar-nav flex-row">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">All Posts</a>
+                            <a class="nav-link" href="{% url 'all-posts-page' %}">All Posts</a>
                         </li>
                     </ul>
                 </div>

@@ -10,7 +10,7 @@ Arijit's Blog
 {% block content %}
 <section id="welcome">
     <header>
-        <img src="" alt="Arijit - Author" />
+        <img src="{% static 'blog/images/user.png' %}" alt="Arijit - Author" />
         <h2>Arijit's Blog</h2>
     </header>
     <p>My bio</p>
@@ -45,8 +45,8 @@ Arijit's Blog
                     </div>
                 </a>
             </article> -->
-            <article class="media content-section post">
-                <img src="#" alt="Hiking"/>
+            <!-- <article class="media content-section post">
+                <img src="{% static 'blog/images/mountains.jpg' %}" alt="Hiking" width="120" height="120"/>
                 <div class="media-body">
                     <div class="article-metadata" >
                         <small class="text-muted justify-content-end">12th June, 2021</small>
@@ -54,18 +54,21 @@ Arijit's Blog
                     <h3><a class="article-title" href="#">Mountain Hiking</a></h3>
                     <p class="article-content"> Tempor commodo esse consectetur voluptate in.</p>
                 </div>
-            </article>
-        </li>
-        <li>
-            <div class="card" style="width: 18rem;">
-                <img src="#" class="card-img-top" alt="Hiking">
+            </article> -->
+            <!-- <div class="card" style="width: 18rem;">
+                <img src="{% static 'blog/images/mountains.jpg' %}" class="card-img-top img-thumbnail" alt="Mountain">
                 <div class="card-body">
-                    <h3 class="card-title">Mountain Hiking</h5>
+                    <h3 class="card-title">Mountain Hiking</h3>
+                        <small class="text-muted justify-content-end">12th June, 2021</small>
+                        
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
-            </div>
+            </div> -->
         </li>
+        {% for post in posts %}
+            {% include 'blog/includes/posts.html' %}
+        {% endfor %}
     </ul>
 </section>
 <section id="about">

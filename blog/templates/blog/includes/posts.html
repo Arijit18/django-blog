@@ -1,0 +1,14 @@
+{% load static %}
+
+<li>
+    <div class="card" style="width: 18rem;">
+        <img src="{% static 'blog/images/'|add:post.image %}" class="card-img-top img-thumbnail" alt="{{post.title}}">
+        <div class="card-body">
+            <h3 class="card-title">{{post.title}}</h3>
+            <small class="text-muted justify-content-end">{{post.date}}</small>
+            <p class="card-text">{{post.excerpt}}
+                content.</p>
+            <a href="{% url 'post-detail-page' post.slug %}" class="btn btn-primary">Read..</a>
+        </div>
+    </div>
+</li>
