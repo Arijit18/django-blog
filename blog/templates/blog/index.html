@@ -3,20 +3,11 @@
 {% block title %}
 Arijit's Blog
 {% endblock title %}
-
 {% block css_files %}
     <link rel="stylesheet" href="{% static 'blog/index.css' %}">
-{% endblock css_files %}
+{% endblock css_files %} 
 
 {% block content %}
-<header id="main-navigation">
-    <h1>
-        <a href="">Arijit's Blog</a>
-        <nav>
-            <a href="">All Posts</a>
-        </nav>
-    </h1>
-</header>
 <section id="welcome">
     <header>
         <img src="" alt="Arijit - Author" />
@@ -24,12 +15,22 @@ Arijit's Blog
     </header>
     <p>My bio</p>
 </section>
+
+<!-- <div class="bg-light p-5 rounded-lg m-3" id="welcome">
+    <img src="" alt="Arijit - Author" />
+    <h1 class="display-4">Arijit's Blog</h1>
+    <p class="lead"> My bio. This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+</div> -->
+
 <section id="latest-posts">
     <h2> My latests</h2>
     <ul>
         <li>
-            <article class="post">
-                <!-- <a href=""> -->
+            <!-- <article class="post">
+                <a href="">
                     <img src="" alt="Moutain Hiking"/>
                     <div class="post__content">
                         <h3>Mountain Hiking</h3>
@@ -42,8 +43,28 @@ Arijit's Blog
                             sit cupidatat enim.
                         </p>
                     </div>
-                <!-- </a> -->
+                </a>
+            </article> -->
+            <article class="media content-section post">
+                <img src="#" alt="Hiking"/>
+                <div class="media-body">
+                    <div class="article-metadata" >
+                        <small class="text-muted justify-content-end">12th June, 2021</small>
+                    </div>
+                    <h3><a class="article-title" href="#">Mountain Hiking</a></h3>
+                    <p class="article-content"> Tempor commodo esse consectetur voluptate in.</p>
+                </div>
             </article>
+        </li>
+        <li>
+            <div class="card" style="width: 18rem;">
+                <img src="#" class="card-img-top" alt="Hiking">
+                <div class="card-body">
+                    <h3 class="card-title">Mountain Hiking</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
         </li>
     </ul>
 </section>
